@@ -1,0 +1,31 @@
+﻿<Project Sdk="Dalamud.NET.Sdk/14.0.1">
+	<PropertyGroup>
+		<AssemblyVersion>1.1.9.3</AssemblyVersion>
+		<FileVersion>$(AssemblyVersion)</FileVersion>
+		<IsPackable>false</IsPackable>
+		<Authors>SheepGoMeh</Authors>
+	</PropertyGroup>
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<DefaultItemExcludes>$(DefaultItemExcludes);**/Properties/Resources.*</DefaultItemExcludes>
+		<SignAssembly>false</SignAssembly>
+		<RepositoryUrl>https://github.com/SheepGoMeh/VisibilityPlugin</RepositoryUrl>
+		<RepositoryType>GitHub</RepositoryType>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DesignTime>True</DesignTime>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="..\res\icon.png" Link="images\icon.png" CopyToOutputDirectory="PreserveNewest" Visible="false"/>
+		<Content Include="..\res\visibility.png" Link="images\image1.png" CopyToOutputDirectory="PreserveNewest" Visible="false"/>
+		<Content Include="..\res\voidlist.png" Link="images\image2.png" CopyToOutputDirectory="PreserveNewest" Visible="false"/>
+	</ItemGroup>
+</Project>
