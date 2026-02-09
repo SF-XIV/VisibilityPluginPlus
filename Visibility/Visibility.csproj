@@ -11,6 +11,7 @@
 		<SignAssembly>false</SignAssembly>
 		<RepositoryUrl>https://github.com/SheepGoMeh/VisibilityPlugin</RepositoryUrl>
 		<RepositoryType>GitHub</RepositoryType>
+		<AssemblyName>VisibilityPlus</AssemblyName>
 	</PropertyGroup>
 	<ItemGroup>
 		<Compile Include="Properties\Resources.Designer.cs">
@@ -24,8 +25,8 @@
 		</EmbeddedResource>
 	</ItemGroup>
 	<ItemGroup>
-		<Content Include="..\res\icon.png" Link="images\icon.png" CopyToOutputDirectory="PreserveNewest" Visible="false"/>
-		<Content Include="..\res\visibility.png" Link="images\image1.png" CopyToOutputDirectory="PreserveNewest" Visible="false"/>
-		<Content Include="..\res\voidlist.png" Link="images\image2.png" CopyToOutputDirectory="PreserveNewest" Visible="false"/>
+		<Content Include="..\res\icon.png" Link="images\icon.png" CopyToOutputDirectory="PreserveNewest" Visible="false" />
+		<Content Include="..\res\visibility.png" Link="images\image1.png" CopyToOutputDirectory="PreserveNewest" Visible="false" />
+		<Content Include="..\res\voidlist.png" Link="images\image2.png" CopyToOutputDirectory="PreserveNewest" Visible="false" />
 	</ItemGroup>
 </Project>
